@@ -1,6 +1,6 @@
-function signup() {
-    var email = document.getElementsByClassName('guestEmail').value;
-    var password = document.getElementsByClassName('guestPassword').value;
+function signUp() {
+    var email = document.getElementsByClassName('guestEmail')[0].value;
+    var password = document.getElementsByClassName('guestPassword')[0].value;
     if (email.length < 4) {
       alert('Please enter an email address.');
       return;
@@ -11,8 +11,10 @@ function signup() {
     }
     // Sign in with email and pass.
     // [START createwithemail]]]
-    firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-      // Handle Errors here.
+        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    
+
+            // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
       // [START_EXCLUDE]
@@ -24,11 +26,12 @@ function signup() {
       console.log(error);
       // [END_EXCLUDE]
     });
+
     // [END createwithemail]
   }
 
 
-  function signin() {
+  function signIn() {
       var email = document.getElementsByClassName('guestEmail').value;
       var password = document.getElementsByClassName('guestPassword').value;
       if (email.length < 4) {
@@ -60,6 +63,6 @@ function signup() {
   }
 
   function initApp() {
-    document.getElementById('signin').addEventListener('click', signin, false);
-    document.getElementById('signup').addEventListener('click', signup, false);
+    document.getElementsByClassName('signin').addEventListener('click', signIn, false);
+    document.getElementsByClassName('signup').addEventListener('click', signUp, false);
   }
