@@ -21,25 +21,28 @@
         firebase.initializeApp(config);
     </script>
     <script src = "firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+
 </head>
 <body>
     <div class = "register">
         <h1>Đăng ký ngay hôm nay</h1>
         <p> Tất cả các thông tin của bạn sẽ không được chia sẻ</p>
         <form class = "details">
-            Họ tên: <br> 
+            <!-- Họ tên: <br> 
                 <input type = "name" class = "guestName" required placeholder = "Họ tên"><br><br>
             Trường đại học: <br>
                 <input type = "text" class = "uniName" required placeholder = "Trường"><br><br>
             Năm học: <br>
                 <input type = "number" class = "startYear" required placeholder = "Năm"><br><br>
             Năm tốt nghiệp: <br>
-                <input type = "number" class = "endYear" required placeholder = "Năm"><br><br>
+                <input type = "number" class = "endYear" required placeholder = "Năm"><br><br> -->
             Email trường: <br>
                 <input type = "email" class = "guestEmail" required placeholder = "email@example.com"><br><br>
             Password: <br>
                 <input type = "password" class = "guestPassword" required placeholder = "Password"><br><br>  
-                <button class = "signup" onclick = "initApp()">Đăng ký tài khoản</button>  
+                <button class = "signup" type="button" onclick= "initApp()"><a href = "registerSuccess.html">Đăng ký tài khoản</a></button>  
         </form>
     </div>  
 </body>
