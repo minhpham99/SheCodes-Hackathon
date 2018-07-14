@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Thiết lập tài khoản</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="loginsignup.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBOGeJHTM7yPesrLEkB68XOGZuEGEyrDHE",
+            authDomain: "shecodes-hackathon.firebaseapp.com",
+            databaseURL: "https://shecodes-hackathon.firebaseio.com",
+            projectId: "shecodes-hackathon",
+            storageBucket: "shecodes-hackathon.appspot.com",
+            messagingSenderId: "562562421837"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src = "firebase.js"></script>
+</head>
+<body>
+    <div class = "register">
+        <h1>Đăng ký ngay hôm nay</h1>
+        <p> Tất cả các thông tin của bạn sẽ không được chia sẻ</p>
+        <form class = "details">
+            Họ tên: <br> 
+                <input type = "name" class = "guestName" required placeholder = "Họ tên"><br><br>
+            Trường đại học: <br>
+                <input type = "text" class = "uniName" required placeholder = "Trường"><br><br>
+            Năm học: <br>
+                <input type = "number" class = "startYear" required placeholder = "Năm"><br><br>
+            Năm tốt nghiệp: <br>
+                <input type = "number" class = "endYear" required placeholder = "Năm"><br><br>
+            Email trường: <br>
+                <input type = "email" class = "guestEmail" required placeholder = "email@example.com"><br><br>
+            Password: <br>
+                <input type = "password" class = "guestPassword" required placeholder = "Password"><br><br>  
+                <button class = "signup" onclick = "initApp()">Đăng ký tài khoản</button>  
+        </form>
+    </div>  
+</body>
+
+</html>
