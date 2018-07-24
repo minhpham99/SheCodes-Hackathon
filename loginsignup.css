@@ -3,8 +3,9 @@ body {
 }
 
 .register, .login, .success{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:white;
+    border-radius: 30px;
+    font-family: 'Varela Round', sans-serif;
+    background-color: white;
     width: 40%;
     margin-top: 5%;
     margin-left: 25%;
@@ -12,25 +13,33 @@ body {
 }
 
 .register .details button.signup, .login .loginform button.logon, .success button.redirect {
+    font-family: 'Varela Round', sans-serif;
     border-radius: 5px;
-    background-color: #33ccff;
+    background-color: black;
     color: white;
-    width: 100%;
-    height: 15%;
     font-size: 18pt;
 }
 
+.success button.redirect {
+    margin-left: 20%;
+}
+
 .register input, .login input{
+    font-family: 'Varela Round', sans-serif;
+    border: 0.5px transparent;
     border-radius: 5px;
     width: 100%;
-    height: 25px;
+    height: 30px;
+    background: #eee;
 }
 
 .success h1 {
+    font-family: 'Varela Round', sans-serif;
     text-align: center;
 }
 a {
     text-decoration:none;
     color:white;
 }
+
 

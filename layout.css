@@ -1,0 +1,28 @@
+.topnav{
+    overflow: hidden;
+    background-color:black;
+}
+.topnav a.elem {
+    float: left;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 17px;
+    list-style-type:none;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.topnav a:hover{
+    color: #565252;
+}
+
+.searchbox {
+    overflow:hidden;
+    background-image: url("/Users/HienMinh/Desktop/Minh/Coding/Hackathon/Hackathon/daihoc.jpg")
+}
+.searchbox .searchtitle h1{
+    font-size: 50pt;
+    padding: 50px;
+    text-align:center;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+

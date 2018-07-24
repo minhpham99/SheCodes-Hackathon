@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Thiết lập tài khoản</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="loginsignup.css" />
-
+    <link rel="stylesheet" href="https://v40.pingendo.com/assets/4.0.0/default/theme.css" type="text/css">
     <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
     <script>
         // Initialize Firebase
@@ -23,26 +24,41 @@
     <script src = "firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
-
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand bg-dark" href="#">Vietnam Uni</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto bg-dark">
+              <li class="nav-item">
+                <a class="nav-link" href="Homepage.html">Trang chủ</a>
+              </li>
+              <a class="nav-link" href="DANHSACHTRUONG.html">Danh sách trường</a>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="Ranking.html">Bảng xếp hạng</a>
+              </li>
+            </ul>
+            <a class="btn navbar-btn ml-2 text-white btn-dark" href="login.html">
+              <i class="fa d-inline fa-lg fa-user-circle-o"></i> Đăng nhập </a>
+          </div>
+        </div>
+      </nav>
+              
     <div class = "register">
         <h1>Đăng ký ngay hôm nay</h1>
         <p> Tất cả các thông tin của bạn sẽ không được chia sẻ</p>
         <form class = "details">
-            <!-- Họ tên: <br> 
-                <input type = "name" class = "guestName" required placeholder = "Họ tên"><br><br>
-            Trường đại học: <br>
-                <input type = "text" class = "uniName" required placeholder = "Trường"><br><br>
-            Năm học: <br>
-                <input type = "number" class = "startYear" required placeholder = "Năm"><br><br>
-            Năm tốt nghiệp: <br>
-                <input type = "number" class = "endYear" required placeholder = "Năm"><br><br> -->
             Email trường: <br>
                 <input type = "email" class = "guestEmail" required placeholder = "email@example.com"><br><br>
             Password: <br>
                 <input type = "password" class = "guestPassword" required placeholder = "Password"><br><br>  
-                <button class = "signup" type="button" onclick= "initApp()"><a href = "registerSuccess.html">Đăng ký tài khoản</a></button>  
+                <button class = "signup" type="button" onclick= "signUp()"><a href = "registerSuccess.html">Đăng ký</a></button>  
         </form>
     </div>  
 </body>
